@@ -14,6 +14,8 @@ import TodoListScreen from "./screens/analytics/todoList";
 import InstantGuruUIDev from "./screens/instantGuruDev";
 import InstantGuruUIProd from "./screens/instantGuruProd";
 import WebInstantGuru from "./screens/web-instant-guru/webInstantGuru";
+// import RemotePDFViewer from "./screens/renderPDF";
+import PdfJsViewer from "./screens/renderPDF2";
 
 const DataContext = createContext();
 
@@ -55,6 +57,9 @@ function App() {
 
           <Route path="/instant-guru-prod" element={<InstantGuruUIProd />} />
           <Route path="/instant-guru-dev" element={<InstantGuruUIDev />} />
+
+          <Route path="/render-pdf" element={<PdfJsViewer />} />
+
 
           {/* <Route path="/web-instant-guru" element={<WebInstantGuru />} /> */}
 

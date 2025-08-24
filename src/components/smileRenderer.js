@@ -19,17 +19,17 @@ const SmilesRenderer = ({ smiles, svg = DEFAULT_SVG, width = 250, height = 250 }
           resolve();
           return;
         }
-        let script = document.getElementById(scriptId);
-        if (!script) {
-          script = document.createElement('script');
-          script.id = scriptId;
-          script.src = 'https://unpkg.com/smiles-drawer@2.0.1/dist/smiles-drawer.min.js';
-          script.onload = resolve;
-          script.onerror = reject;
-          document.body.appendChild(script);
-        } else {
-          script.onload = resolve;
-        }
+        // let script = document.getElementById(scriptId);
+        // if (!script) {
+        //   script = document.createElement('script');
+        //   script.id = scriptId;
+        //   script.src = 'https://unpkg.com/smiles-drawer@2.0.1/dist/smiles-drawer.min.js';
+        //   script.onload = resolve;
+        //   script.onerror = reject;
+        //   document.body.appendChild(script);
+        // } else {
+        //   script.onload = resolve;
+        // }
       });
     };
 
